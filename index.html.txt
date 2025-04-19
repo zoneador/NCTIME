@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendador de Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+  <div class="input-group">
+    <label>Data atual (DD/MM/AAAA):</label><br />
+    <input type="text" id="currentDate" value="05/04/2025" />
+  </div>
+  <div class="input-group">
+    <label>Hora atual (HH:MM):</label><br />
+    <input type="text" id="currentTime" value="09:44" />
+  </div>
+
+  <table id="inputTable">
+    <thead>
+      <tr>
+        <th>Local</th>
+        <th>Horas</th>
+        <th>Minutos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" placeholder="Gruta 7" /></td>
+        <td><input type="number" value="4" /></td>
+        <td><input type="number" value="24" /></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="adicionarLinha()">Adicionar Linha</button>
+  <button onclick="processarTabela()">Calcular Todos</button>
+
+  <div class="board" id="lousa">
+    <strong>Lousa de Horários:</strong>
+  </div>
+
+  <script src="script.js"></script>
+ </div>
+</body>
+</html>
